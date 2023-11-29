@@ -102,19 +102,12 @@
 //     }
 // }
 
-int maxNumber(int a, int b)
-{ // Функция
-    if (a > b)
-        return a;
-    return b; // a <= b
+void test(ref int m)
+{
+    m = m + 10;
 }
-
-
 Console.Clear();
-Console.Write("Введите 1-ое число: ");
-int n = int.Parse(Console.ReadLine()!);
-Console.Write("Введите 2-ое число: ");
-int m = int.Parse(Console.ReadLine()!);
-Console.WriteLine($"Наибольшее значение: {maxNumber(n, m)}");
-
+int n = 7;
+test(ref n);
+Console.Write(n);
 
