@@ -1,35 +1,52 @@
-﻿using System;
+﻿
+// int[] FillArray(int size)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-5, 6);
+//     }
+//     return array;
+// }
+// void PrintArray(int[] inArray)
+// {
+//     for (int i = 0; i < inArray.Length; i++)
+//     {
+//         Console.Write(inArray[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+// void FindNumberInArray(int num, int[] ar)
+// {
+//     bool flag = false;
+//     foreach (int element in ar)
+//     {
+//         if (element == num)
+//         {
+//             flag = true;
+//         }
+//     }
+//     if (flag) Console.Write("Да");
+//     else Console.Write("Нет");
+// }
 
-class Program
+// int lengthArray = 8;
+// int[] arr = FillArray(lengthArray);
+// PrintArray(arr);
+
+// int lengthArray2 = 12;
+// int[] arr2 = FillArray(lengthArray2);
+// PrintArray(arr2);
+
+// int number = Convert.ToInt32(Console.ReadLine());
+// FindNumberInArray(number, arr);
+// FindNumberInArray(number, arr2);
+
+void PrintMessage(string message)
 {
-    static void Main()
-    {
-        // Создаем массив из вещественных чисел с нулевой дробной частью
-        double[] numbers = { 2.2, 0.4, 9.11, 7.2, 78.98 };
-
-        // Находим минимальное и максимальное значение в массиве
-        double min = double.MaxValue;
-        double max = double.MinValue;
-
-        foreach (double number in numbers)
-        {
-            if (number < min)
-            {
-                min = number;
-            }
-
-            if (number > max)
-            {
-                max = number;
-            }
-        }
-
-        // Находим разницу между максимальным и минимальным элементом
-        double difference = max - min;
-
-        // Выводим результат
-        Console.WriteLine($"Минимальное значение: {min}");
-        Console.WriteLine($"Максимальное значение: {max}");
-        Console.WriteLine($"Разница между максимальным и минимальным элементом: {difference}");
-    }
+    Console.WriteLine(message);
 }
+ 
+PrintMessage("Hello work");           
+PrintMessage("Hello METANIT.COM");    
+PrintMessage("Hello C#");
