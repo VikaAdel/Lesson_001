@@ -4,9 +4,10 @@
 
 
 Console.Clear();
-// Создаем массив  из 10 целых чисел 
+//создали массив , где 10 это количество элементов 
 
 int[] numbers = new int[10];
+
 Random random = new Random();
 
 int count = 0;
