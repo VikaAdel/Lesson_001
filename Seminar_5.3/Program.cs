@@ -7,6 +7,7 @@
 
 void InputMatrix(int[,] matrix)
 {
+    
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -47,7 +48,7 @@ int minSumRowIndex = -1;
 //  Проходим по каждой строке матрицы
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
-    
+
     //  Вычисляем сумму элементов в текущей строке
     int currentSum = 0;
     for (int j = 0; j < matrix.GetLength(1); j++)
