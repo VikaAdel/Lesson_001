@@ -2,18 +2,19 @@
 
 
 Console.Clear();
-char[,] charArray =
+char[,] chars =
 {
     {'H', 'e', 'l', 'l', 'o'},
     {'W', 'o', 'r', 'l', 'd'}
 };
+//Console.Write("Введите символы через пробел: ");
 //char[] chars = Console.ReadLine()!.Split().Select(x => char.Parse(x)).ToArray();
 
 string result = string.Empty; // создание пустой строки
 
-foreach (char element in charArray)
+foreach (char element in chars)
 {
     result = result + element;
 }
 Console.WriteLine(result);
-//string initial = Console.ReadLine()!;
+
